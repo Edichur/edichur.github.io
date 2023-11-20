@@ -380,7 +380,7 @@ span {
 }
 
 .portfolio {
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 .portfolio h2 {
@@ -497,7 +497,7 @@ span {
     height: 30rem;
     object-fit: cover;
     border-radius: 5%;
-    border: .5rem solid var(--bg-color);
+    border: .1rem solid var(--bg-color);
     outline: .5rem solid var(--main-color);
 }
 
