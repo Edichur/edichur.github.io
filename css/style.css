@@ -403,6 +403,7 @@ span {
 }
 
 .portfolio-box img {
+    height: 35rem;
     width: 100%;
     transition: .5s ease;
 }
@@ -457,6 +458,80 @@ span {
     color: #333;
 
 }
+
+.learnings-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 1rem;
+}
+
+.learnings-container .learnings-wrapper {
+    position: relative;
+    max-width: 90rem;
+    width: 100%;
+    padding: 5rem;
+}
+
+.learnings-wrapper .learnings-box {
+    padding: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.learnings-content .learnings-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    padding: 3rem 5rem;
+    border-top: .8rem solid var(--main-color);
+    border-bottom: .8rem solid var(--main-color);
+}
+
+.learnings-slide img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 5%;
+    border: .5rem solid var(--bg-color);
+    outline: .5rem solid var(--main-color);
+}
+
+.learnings-slide h3 {
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.learnings-slide p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.learnings-box .swiper-button-next,
+.learnings-box .swiper-button-prev {
+    color: var(--main-color);
+}
+
+.learnings-box .swiper-button-next {
+    right: 0;
+}
+
+.learnings-box .swiper-button-prev {
+    left: 0;
+}
+
+.learnings-box .swiper-pagination-bullet {
+    background: rgba(0, 0, 0, .8);
+}
+
+.learnings-box .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
 
 .contact h2 {
     margin-bottom: 3rem;
