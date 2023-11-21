@@ -532,7 +532,6 @@ span {
     background: var(--main-color);
 }
 
-
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -547,7 +546,7 @@ span {
     height: 2rem;
     font-size: 3rem;
     color: var(--main-color);
-    margin: 2rem 1.5rem 1rem 0;
+    margin: 2rem 1.5rem 0 0;
 }
 
 .contact a {
