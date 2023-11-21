@@ -537,6 +537,23 @@ span {
     margin-bottom: 3rem;
 }
 
+.contact h3 {
+    font-size: 3rem;
+    text-align: center;
+
+}
+.contact i {
+    width: 2rem;
+    height: 2rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 1rem 0;
+}
+
+.contact a {
+    color: var(--main-color);
+}
+
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
