@@ -276,7 +276,7 @@ section {
 }
 
 .home-img img {
-    position: absolute;
+    position:absolute;
     bottom: 0;
     right: 0;
     width: 100%;
@@ -493,9 +493,9 @@ span {
 }
 
 .learnings-slide img {
-    width: 100%;
+    width: fit-content;
     height: 30rem;
-    object-fit: cover;
+    object-fit:cover;
     border-radius: 5%;
     border: .1rem solid var(--bg-color);
     outline: .5rem solid var(--main-color);
