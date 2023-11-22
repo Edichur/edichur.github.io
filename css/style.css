@@ -509,7 +509,7 @@ span {
 
 .learnings-slide p {
     font-size: 1.4rem;
-    text-align: center;
+    text-align: justify;
 }
 
 .learnings-box .swiper-button-next,
@@ -853,11 +853,36 @@ span {
     .portfolio .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .learnings-container h3 {
+        text-align: center;
+    }
+
+    .learnings-content p {
+        text-align: justify;
+    }
+
+    .learnings-slide img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 617px) {
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
+    }
+
+    .learnings-slide {
+        height: 100%;
+        max-width: 60rem;
+        overflow-y: scroll;
+    }
+
+    .contact-content h3 {
+        font-size: 2.5rem;
+    }
+    .contact-content i {
+        font-size: 2.5rem;
     }
 }
 
@@ -888,6 +913,24 @@ span {
 
     .home .profession-box .profession:nth-child(4) {
         transform: rotate(180deg) translate(-210px, -335px);
+    }
+
+    .learnings-container h3 {
+        text-align: center;
+    }
+
+    .learnings-slide {
+        height: 100%;
+        max-height: 50rem;
+        overflow-y:scroll;
+    }
+
+    .learnings-content p {
+        text-align: justify;
+    }
+
+    .learnings-slide img {
+        display: none;
     }
 
     .contact form .input-box input {
