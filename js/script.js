@@ -96,20 +96,24 @@ ScrollReveal().reveal('.home-img img, .experiences-container, .portfolio-box, .c
 ScrollReveal().reveal('.home-content h1, .about-img img, .contact i', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
 
-let slides = document.querySelectorAll('.slide');
-let current = 0;
-let slideCount = slides.length;
+let slideClasses = ['slide', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6'];
 
-// Clone the first set of images and append them to the end of the slider
-for (let i = 0; i < slideCount; i++) {
- let clone = slides[i].cloneNode(true);
- slides[i].parentNode.appendChild(clone);
+for (let i = 0; i < slideClasses.length; i++) {
+   let slides = document.querySelectorAll('.' + slideClasses[i]);
+   let current = 0;
+   let slideCount = slides.length;
+
+   // Clone the first set of images and append them to the end of the slider
+   for (let j = 0; j < slideCount; j++) {
+       let clone = slides[j].cloneNode(true);
+       slides[j].parentNode.appendChild(clone);
+   }
+
+   function nextSlide() {
+       slides[current].style.opacity = 0;
+       current = (current != slideCount - 1) ? current + 1 : 0;
+       slides[current].style.opacity = 1;
+   }
+
+   setInterval(nextSlide, 2000);
 }
-
-function nextSlide() {
- slides[current].style.opacity = 0;
- current = (current != slideCount - 1) ? current + 1 : 0;
- slides[current].style.opacity = 1;
-}
-
-setInterval(nextSlide, 2000);
