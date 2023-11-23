@@ -95,3 +95,21 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .experiences-container, .portfolio-box, .contact form, .learnings-wrapper, .contact h3', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img, .contact i', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+let slides = document.querySelectorAll('.slide');
+let current = 0;
+let slideCount = slides.length;
+
+// Clone the first set of images and append them to the end of the slider
+for (let i = 0; i < slideCount; i++) {
+ let clone = slides[i].cloneNode(true);
+ slides[i].parentNode.appendChild(clone);
+}
+
+function nextSlide() {
+ slides[current].style.opacity = 0;
+ current = (current != slideCount - 1) ? current + 1 : 0;
+ slides[current].style.opacity = 1;
+}
+
+setInterval(nextSlide, 2000);
