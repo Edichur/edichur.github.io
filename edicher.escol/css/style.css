@@ -561,14 +561,14 @@ span {
 }
 
 .contact h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 
 }
 .contact i {
     width: 2rem;
     height: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--main-color);
     margin: 2rem 1.5rem 0 0;
 }
